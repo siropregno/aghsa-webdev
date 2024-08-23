@@ -117,7 +117,7 @@ section {
   background: url(/assets/images/img2.png) no-repeat;
   background-size: cover;
   background-position: center center;
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */
