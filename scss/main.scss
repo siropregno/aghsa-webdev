@@ -1,20 +1,5 @@
-:root {
+@import "estructura";
 
-    /* COLORES */
-    --celeste-1: #01A2D8;
-    --verde-1: #60A650;
-    --celeste-2: #00AEEE;
-    --verde-2: #24B24B;
-    --blanco: #f2f2f2;
-    --negro: #111;
+@import "colores";
 
-    /* TAMAÑOS DE TEXTO */
-    --titulo: 42px;
-    --subtitulo: 20px;
-    --texto: 22px;
-
-    /* FUENTES */
-    --cairo:"Cairo",sans-serif;
-    --poppins:"Poppins",sans-serif;
-
-}
+@import "fuentes";
