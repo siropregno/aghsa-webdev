@@ -1,8 +1,7 @@
-// Estructura
 
-$titulo: 42px;
-$subtitulo: 20px;
-$texto: 22px;
+@import "media-queries";
+
+// Estructura
 
 * {
     padding: 0;
@@ -12,20 +11,25 @@ $texto: 22px;
     box-sizing: border-box;
 }
 
-.enlace {
-    position: absolute;
-    padding: 20px 50px;
-}
-
 #logo {
+    margin:20px 50px;
     height: 40px;
+
+    @media screen and (max-width: $laptop){
+        margin-left: 8%;
+    }
 }
 
-nav {
+// NAVBAR ESCRITORIO
+
+.navbar-desktop {
     background-color: $negro;
     height: 80px;
     width: 100%;
-    ul  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    ul {
         float: right;
         margin-right: 20px;
         li {
@@ -38,27 +42,84 @@ nav {
                 padding: 7px 13px;
                 border-radius: 3px;
                 text-transform: uppercase;
+                font-family: $poppins;
+            }
+            a:hover {
+                transition: 0.5s;
+                color: $celeste-1;
             }
         }
     }
+    @media screen and (max-width: $laptop){
+        display: none;
+    }
+    
 }
 
-li a.active, li a:hover {
-    transition: .5s;
+// NAVBAR MOBILE
+
+.navbar-mobile {
+    background-color: $negro;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: $laptop){
+        display: none;
+    }
 }
 
-.checkbtn {
+.dropbtn {
+    background-color: $negro;
+    color: $blanco;
+    padding: 0px 20px 0px 20px;
     font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    display: none;
+    border: none;
+    cursor: pointer;
+    height: 80px;
 }
 
-#check {
-    display: none;
+.backbtn {
+    color: #111;
+    padding: 25px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    margin-left: -125px;
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #f3f3f3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "open Sans", sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #111;
+}
+
+.show {
+    display: block;
+}
+
+//CONTENT
 
 section {
     background: url(/assets/images/img2.png) no-repeat;
