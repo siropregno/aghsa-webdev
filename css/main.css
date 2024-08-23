@@ -6,16 +6,59 @@
   box-sizing: border-box;
 }
 
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
+}
+
+#logo {
+  height: 40px;
+}
+
 nav {
-  background-color: black;
+  background-color: #111;
   height: 80px;
   width: 100%;
 }
-
-logo {
-  height: 100px;
-  width: 100px;
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
+li a.active, li a:hover {
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+section {
+  background: url(/assets/images/img2.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
 
 /*# sourceMappingURL=main.css.map */
