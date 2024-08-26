@@ -17,6 +17,10 @@
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar-desktop {
   background-color: #111;
   height: 80px;
@@ -127,7 +131,6 @@
   width: 100%;
   height: 400px;
   overflow: hidden;
-  z-index: 1;
   background-color: rgb(89, 136, 136);
 }
 
@@ -245,7 +248,6 @@
 
 .image2 {
   height: 400px;
-  width: 100vw;
   overflow: hidden;
 }
 
