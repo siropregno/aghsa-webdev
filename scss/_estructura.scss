@@ -164,7 +164,6 @@ body {
     width: 70%;
 }
 
-
 .mySlides {
     display: none;
 }
@@ -264,8 +263,17 @@ body {
 //IMAGE2
 
 .image2 {
+    position: relative;
     height: 400px;
     overflow: hidden;
+    img {
+      position: absolute;
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
+    }
 }
 
 //FOOTER
