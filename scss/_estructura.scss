@@ -29,6 +29,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     ul {
         float: right;
         margin-right: 20px;
@@ -38,11 +39,12 @@
             margin: 0 5px;
             a {
                 color: white;
-                font-size: 18px;
+                font-size: $texto;
                 padding: 7px 13px;
                 border-radius: 3px;
                 text-transform: uppercase;
                 font-family: $poppins;
+                font-weight: $medium;
             }
             a:hover {
                 transition: 0.5s;
@@ -101,7 +103,7 @@
     top: 1;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     z-index: 1000;
     display: none;
     position: fixed;
@@ -147,9 +149,10 @@
 }
 
 .slider-image-title {
-    font-family: "Teko", sans-serif;
-    font-size: 40px;
-    font-weight: 450;
+    font-family: $cairo;
+    font-size: 35px;
+    font-weight: $black;
+    text-transform: uppercase;
 }
 
 .slider-image-text {
@@ -169,7 +172,7 @@
     margin-top: 180px;
     padding: 16px;
     color: $blanco;
-    font-weight: bold;
+    font-weight: $bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
@@ -234,3 +237,34 @@ section {
 
 //TEXT-BOX
 
+.text-box {
+    padding: 30px 50px 30px 50px;
+    text-align: center;
+    font-family: $cairo;
+    p {
+        font-weight: $regular;
+        line-height: 25px;
+        font-size: $semitexto;
+    }
+}
+
+.text-box2 {
+    padding: 30px 50px 30px 50px;
+    text-align: center;
+    font-family: $cairo;
+    background-color: $negro;
+    p {
+        font-weight: $regular;
+        line-height: 25px;
+        font-size: $semitexto;
+        color: $blanco;
+    }
+}
+
+//IMAGE2
+
+.image2 {
+    height: 400px;
+    width: 100vw;
+    overflow: hidden;
+}
