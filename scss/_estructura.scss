@@ -53,6 +53,7 @@ body {
             a:hover {
                 transition: 0.5s;
                 color: $celeste-1;
+                text-decoration: none;
             }
         }
     }
@@ -236,24 +237,27 @@ body {
 .text-box {
     padding: 30px 50px 30px 50px;
     text-align: center;
-    font-family: $cairo;
+    h1 {
+      font-family: $cairo;
+    }
     p {
         font-weight: $regular;
         line-height: 25px;
         font-size: $semitexto;
+        font-family: $cairo;
     }
 }
 
 .text-box2 {
     padding: 30px 50px 30px 50px;
     text-align: center;
-    font-family: $cairo;
     background-color: $negro;
     p {
         font-weight: $regular;
         line-height: 25px;
         font-size: $semitexto;
         color: $blanco;
+        font-family: $cairo;
     }
 }
 
