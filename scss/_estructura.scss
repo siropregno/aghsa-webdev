@@ -33,7 +33,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     ul {
         float: right;
         margin-right: 20px;
@@ -42,7 +42,7 @@ body {
             line-height: 80px;
             margin: 0 5px;
             a {
-                color: white;
+                color: $blanco;
                 font-size: $texto;
                 padding: 7px 13px;
                 border-radius: 3px;
@@ -66,7 +66,6 @@ body {
 // NAVBAR MOBILE
 
 .navbar-mobile {
-    z-index: 1;
     background-color: $negro;
     height: 80px;
     width: 100%;
@@ -75,7 +74,7 @@ body {
     top: 0;
     left: 0;
     justify-content: space-between;
-
+    z-index: 100;
     @media screen and (min-width: $laptop){
         display: none;
     }
@@ -105,27 +104,22 @@ body {
 }
 
 .dropdown-content {
-    top: 1;
+    top: 80px;
     left: 0;
     width: 100%;
     height: 95vh;
-    z-index: 1000;
     display: none;
     position: fixed;
-    background-color: #111;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: $negro;
 }
 
 .dropdown-content a {
-    color: #f3f3f3;
+    color: $blanco;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-family: "open Sans", sans-serif;
-}
-
-.dropdown-content a:hover {
-    background-color: #111;
+    font-size: 20px;
 }
 
 .show {
@@ -139,7 +133,6 @@ body {
     width: 100%;
     height: 400px;
     overflow: hidden;
-    background-color: rgb(89, 136, 136);
 }
 
 .slider-textbox {
@@ -189,7 +182,7 @@ body {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: $negro;
 }
 
 .text {
