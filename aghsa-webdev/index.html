@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global AGH</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<header>
+    <nav class="navbar-desktop">
+        <a href="index.html" class="enlace">
+            <img src="assets/images/logocolor.png" alt="page logo" id="logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="/pages/novedades.html">Novedades</a></li>
+            <li><a href="/pages/productos.html">Productos</a></li>
+            <li><a href="/pages/empresas-representadas.html">Empresas</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar-mobile">
+        <a href="index.html" class="enlace">
+            <img src="assets/images/logocolor.png" alt="page logo" id="logo">
+        </a>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" onmouseleave="" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <button onclick="toggleDropdown()" onmouseleave="" class="xmarkbtn"><i class="fa-solid fa-xmark"></i></button>
+                <hr>
+                <div class="rec-flex">
+                  <a href="index.html">INICIO</a>
+                  <div class="rec-verde"></div>
+                </div>
+                <hr>
+                <div class="rec-flex">
+                <a href="/pages/novedades.html">NOVEDADES</a>
+                <div class="rec-verde"></div>
+                </div>
+                <hr>
+                <div class="rec-flex">
+                <a href="/pages/productos.html">PRODUCTOS</a>
+                <div class="rec-verde"></div>
+                </div>
+                <hr>
+                <div class="rec-flex">
+                <a href="/pages/empresas-representadas.html">EMPRESAS</a>
+                <div class="rec-verde"></div>
+                </div>
+                <hr>
+                <div class="rec-flex">
+                <a href="/pages/contacto.html">CONTACTO</a>
+                <div class="rec-verde"></div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </nav>
+</header>
+<body> 
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="slider-textbox">
+                <h1 class="slider-image-title">Lorem Ipsum A</h1>
+                <p class="slider-image-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a href="#" target="_blank"><img src="assets/images/img1.png"></a>
+        </div>
+        <div class="mySlides fade">
+            <div class="slider-textbox">
+                <h1 class="slider-image-title">Lorem Ipsum B</h1>
+                <p class="slider-image-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a href="#" target="_blank"><img src="assets/images/img2.png"></a>
+        </div>
+        <div class="mySlides fade">
+            <div class="slider-textbox">
+                <h1 class="slider-image-title">Lorem Ipsum C</h1>
+                <p class="slider-image-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a href="#" target="_blank"><img src="assets/images/img3.png"></a>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="dotcontainer" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <div class="text-box">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia velit non perspiciatis est, quibusdam nemo omnis? Culpa nulla odit iure adipisci asperiores perferendis maxime ullam, suscipit voluptates, delectus quam.</p>
+    </div>
+    <div class="image2">
+        <img src="assets/images/img3.png" alt="anilox-roller">
+    </div>
+    <div class="text-box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia velit non perspiciatis est, quibusdam nemo omnis? Culpa nulla odit iure adipisci asperiores perferendis maxime ullam, suscipit voluptates, delectus quam.</p>
+    </div>
+    <div class="container"></div>
+<footer>
+  <section class="ft-main">
+    <div class="ft-main-item">
+      <h2 class="ft-title">About</h2>
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Resources</h2>
+      <ul>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">eBooks</a></li>
+        <li><a href="#">Webinars</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Contact</h2>
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Advertise</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Stay Updated</h2>
+      <p>Subscribe to our newsletter to get our latest news.</p>
+      <form>
+        <input type="email" name="email" placeholder="Enter email address">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
+  <section class="ft-legal">
+    <ul class="ft-legal-list">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; 2024 Copyright AMS. S.A.</li>
+    </ul>
+  </section>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/66f6813926.js" crossorigin="anonymous"></script>
+<script src="script.js" crossorigin="anonymous"></script>
+</html>
