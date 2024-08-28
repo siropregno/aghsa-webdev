@@ -177,7 +177,8 @@ body {
   display: none;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -197,7 +198,8 @@ body {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #111;
 }
 
@@ -213,8 +215,8 @@ body {
 
 .dotcontainer {
   position: absolute;
-  margin-top: 360px;
-  height: 400px;
+  margin-top: 350px;
+  height: 50px;
   width: 100%;
   top: 80px;
 }
@@ -223,14 +225,15 @@ body {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -245,8 +248,10 @@ body {
 }
 .text-box h1 {
   font-family: "Cairo", sans-serif;
+  line-height: 20px;
 }
 .text-box p {
+  padding-top: 30px;
   font-weight: 400;
   line-height: 25px;
   font-size: 16px;
@@ -282,7 +287,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Cairo", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -309,7 +314,9 @@ a:hover {
 
 .ft-title {
   color: #fff;
-  font-family: "Merriweather", serif;
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
   font-size: 1.375rem;
   padding-bottom: 0.625rem;
 }
