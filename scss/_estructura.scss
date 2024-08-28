@@ -59,13 +59,13 @@ body {
 }
 
 .enlace {
-  position: relative;
-  background-color: #00d188;
+  position: inherit;
   height: 50px;
   width: auto;
   margin: 15px 50px;
 
   @media screen and (max-width: $laptop) {
+      position: relative;
       margin: 20px 50px 20px 4%;
       height: 40px;
   }
@@ -73,7 +73,7 @@ body {
 
 .enlace img {
   height: 50px;
-  
+
   @media screen and (max-width: $laptop) {
     height: 40px;
 }
