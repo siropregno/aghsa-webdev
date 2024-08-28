@@ -178,6 +178,7 @@ body {
 .slider-image-title {
 	font-family: $cairo;
 	font-size: 35px;
+  line-height: 40px;
 	font-weight: $black;
 	text-transform: uppercase;
 }
@@ -187,12 +188,30 @@ body {
 	width: 70%;
 }
 
+.slider-button {
+  font-family: $poppins;
+  font-weight: $medium;
+  color: $blanco;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: $celeste-1;
+  width: 15%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0px;
+
+  @media screen and (max-width: $laptop) {
+		width: 120px;
+	}
+
+}
+
 .mySlides {
 	display: none;
 }
 
-.prev,
-.next {
+.prev, .next {
 	cursor: pointer;
 	position: absolute;
 	width: auto;
@@ -248,7 +267,7 @@ body {
 
 .active,
 .dot:hover {
-	background-color: #717171;
+	background-color: $verde-1;
 }
 
 .fade {

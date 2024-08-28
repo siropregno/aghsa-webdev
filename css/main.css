@@ -164,6 +164,7 @@ body {
 .slider-image-title {
   font-family: "Cairo", sans-serif;
   font-size: 35px;
+  line-height: 40px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -173,12 +174,30 @@ body {
   width: 70%;
 }
 
+.slider-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #01A2D8;
+  width: 15%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0px;
+}
+@media screen and (max-width: 1024px) {
+  .slider-button {
+    width: 120px;
+  }
+}
+
 .mySlides {
   display: none;
 }
 
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -234,7 +253,7 @@ body {
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #60A650;
 }
 
 .fade {
