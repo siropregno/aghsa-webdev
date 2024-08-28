@@ -7,16 +7,6 @@
   box-sizing: border-box;
 }
 
-#logo {
-  margin: 20px 50px;
-  height: 40px;
-}
-@media screen and (max-width: 1024px) {
-  #logo {
-    margin-left: 8%;
-  }
-}
-
 body {
   overflow-x: hidden;
 }
@@ -32,12 +22,12 @@ body {
 }
 .navbar-desktop ul {
   float: right;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 .navbar-desktop ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
+  margin: 0 15px;
 }
 .navbar-desktop ul li a {
   color: #f2f2f2;
@@ -56,6 +46,29 @@ body {
 @media screen and (max-width: 1024px) {
   .navbar-desktop {
     display: none;
+  }
+}
+
+.enlace {
+  position: relative;
+  background-color: #00d188;
+  height: 50px;
+  width: auto;
+  margin: 15px 50px;
+}
+@media screen and (max-width: 1024px) {
+  .enlace {
+    margin: 20px 50px 20px 4%;
+    height: 40px;
+  }
+}
+
+.enlace img {
+  height: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .enlace img {
+    height: 40px;
   }
 }
 
