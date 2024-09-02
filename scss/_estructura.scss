@@ -233,7 +233,7 @@ body {
 
 .slider-button:hover {
 	text-decoration: none;
-	font-size: 17px;
+	filter: brightness(110%);
 }
 
 .mySlides {
@@ -254,6 +254,10 @@ body {
 .slider-img-medium{
 	z-index: 1;
 	filter: brightness(30%);
+
+	@media screen and (min-width: $laptop) {
+		display:none;
+	}
 }
 
 
