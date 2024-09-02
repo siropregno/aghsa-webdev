@@ -81,6 +81,7 @@ body {
   top: 0;
   left: 0;
   justify-content: space-between;
+  align-items: center;
   z-index: 100;
 }
 @media screen and (min-width: 1024px) {
@@ -92,11 +93,11 @@ body {
 .dropbtn {
   background-color: #111;
   color: #f2f2f2;
-  padding: 0px 20px 0px 20px;
-  font-size: 30px;
+  font-size: 40px;
   border: none;
   cursor: pointer;
-  height: 80px;
+  margin-right: 25px;
+  line-height: 80px;
 }
 
 .dropdown {
@@ -132,8 +133,8 @@ body {
 .xmarkbtn {
   background-color: #111;
   color: #f2f2f2;
-  padding: 0px 60px 0px 25px;
-  font-size: 30px;
+  padding: 0px 67px 0px 25px;
+  font-size: 40px;
   border: none;
   cursor: pointer;
   height: 80px;
@@ -162,6 +163,12 @@ body {
   width: 100%;
   height: 400px;
   overflow: hidden;
+  background-color: #4a4a4a;
+}
+@media screen and (min-width: 1024px) {
+  .slideshow-container {
+    height: 600px;
+  }
 }
 
 .slider-textbox {
@@ -172,6 +179,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .slider-textbox {
+    height: 550px;
+    margin-left: 150px;
+  }
 }
 
 .slider-image-title {
@@ -206,6 +219,11 @@ body {
   }
 }
 
+.slider-button:hover {
+  text-decoration: none;
+  font-size: 17px;
+}
+
 .mySlides {
   display: none;
 }
@@ -214,25 +232,34 @@ body {
   cursor: pointer;
   position: absolute;
   width: auto;
-  margin-top: 180px;
-  padding: 16px;
+  margin-top: 150px;
+  padding: 10px 22px 10px 16px;
   color: #f2f2f2;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   top: 80px;
 }
+@media screen and (min-width: 1024px) {
+  .prev, .next {
+    margin-top: 250px;
+    padding: 26px;
+    font-size: 35px;
+  }
+}
 
 .next {
   right: 0;
+  padding: 10px 16px 10px 22px;
   border-radius: 3px 0 0 3px;
 }
 
 .prev:hover,
 .next:hover {
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
 .dotcontainer {
@@ -241,6 +268,11 @@ body {
   height: 50px;
   width: 100%;
   top: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .dotcontainer {
+    margin-top: 540px;
+  }
 }
 
 .dot {
