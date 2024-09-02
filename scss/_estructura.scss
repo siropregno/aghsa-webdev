@@ -248,16 +248,6 @@ body {
 	background-color: $negro;
 }
 
-.text {
-	color: $blanco;
-	font-size: 15px;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 100%;
-	text-align: center;
-}
-
 .dotcontainer {
 	position: absolute;
 	margin-top: 350px;
@@ -297,15 +287,23 @@ body {
 
 	h1 {
 		font-family: $cairo;
+		font-size: 25px;
 		line-height: 20px;
+		text-transform: uppercase;
+		@media screen and (max-width: $laptop) {
+			font-size: 22px;
+		}
 	}
 
 	p {
-		padding-top: 30px;
+		padding-top: 15px;
 		font-weight: $regular;
 		line-height: 25px;
-		font-size: $semitexto;
+		font-size: $texto;
 		font-family: $cairo;
+		@media screen and (max-width: $laptop) {
+			font-size: $semitexto;
+		}
 	}
 }
 
@@ -317,10 +315,14 @@ body {
 	p {
 		font-weight: $regular;
 		line-height: 25px;
-		font-size: $semitexto;
+		font-size: $texto;
 		color: $blanco;
 		font-family: $cairo;
+		@media screen and (max-width: $laptop) {
+			font-size: $semitexto;
+		}
 	}
+
 }
 
 //IMAGE2
