@@ -8,54 +8,53 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <header>
-    <nav class="navbar-desktop">
-        <a href="../index.html" class="enlace">
-            <img src="../assets/images/logocolor.png" alt="page logo" id="logo">
-        </a>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="novedades.html">Novedades</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="empresas-representadas.html">Empresas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <nav class="navbar-mobile">
-      <a href="../index.html" class="enlace">
-          <img src="../assets/images/logocolor.png" alt="page logo" id="logo">
-      </a>
-      <div class="dropdown">
-          <button onclick="toggleDropdown()" onmouseleave="" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-          <div id="myDropdown" class="dropdown-content">
-              <button onclick="toggleDropdown()" onmouseleave="" class="xmarkbtn"><i class="fa-solid fa-xmark"></i></button>
-              <hr>
-              <div class="rec-flex">
-                <a href="../index.html">INICIO</a>
-                <div class="rec-verde"></div>
-              </div>
-              <hr>
-              <div class="rec-flex">
-              <a href="novedades.html">NOVEDADES</a>
-              <div class="rec-verde"></div>
-              </div>
-              <hr>
-              <div class="rec-flex">
-              <a href="productos.html">PRODUCTOS</a>
-              <div class="rec-verde"></div>
-              </div>
-              <hr>
-              <div class="rec-flex">
-              <a href="empresas-representadas.html">EMPRESAS</a>
-              <div class="rec-verde"></div>
-              </div>
-              <hr>
-              <div class="rec-flex">
-              <a href="contacto.html">CONTACTO</a>
-              <div class="rec-verde"></div>
-              </div>
-              <hr>
-          </div>
+  <nav class="navbar-desktop">
+          <a href="../index.html" class="enlace">
+          <img src="../assets/images/logocolor.png" alt="page logo">
+          </a>
+          <ul>
+              <li class="selected">
+                  <a href="../index.html">Inicio</a>
+                  <div class="selected-no"></div>
+              </li>
+              <li>
+                  <a href="novedades.html">Novedades</a>
+                  <div class="selected-no"></div>
+              </li>
+              <li>
+                  <a href="productos.html">Productos</a>
+                  <div class="selected-yes"></div>
+              </li>
+              <li>
+                  <a href="empresas-representadas.html">Empresas</a>
+                  <div class="selected-no"></div>
+              </li>
+              <li>
+                  <a href="contacto.html">Contacto</a>
+                  <div class="selected-no"></div>
+              </li>
+          </ul>
+      </nav>
+  <nav class="navbar-mobile">
+    <a href="../index.html" class="enlace">
+    <img src="../assets/images/logocolor.png" alt="page logo">
+    </a>
+    <div class="dropdown">
+      <button onclick="toggleDropdown()" onmouseleave="" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <div id="myDropdown" class="dropdown-content">
+        <button onclick="toggleDropdown()" onmouseleave="" class="xmarkbtn"><i class="fa-solid fa-xmark"></i></button>
+          <a href="../index.html">Inicio</a>
+        <hr>
+          <a href="novedades.html">Novedades</a>
+        <hr>
+          <a href="productos.html">Productos</a>
+        <hr>
+          <a href="empresas-representadas.html">Empresas</a>
+        <hr>
+          <a href="contacto.html">Contacto</a>
+        <hr>
       </div>
+    </div>
   </nav>
 </header>
 <footer>
