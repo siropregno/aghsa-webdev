@@ -14,84 +14,13 @@ body {
 	overflow-x: hidden;
 }
 
-// NAVBAR ESCRITORIO
+// NAVBAR
 
-.navbar-desktop {
-    background-color: $negro;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-
-    ul {
-        float: right;
-        margin-right: 20px;
-        display: flex;
-        flex-direction: row;
-		
-        li {
-			padding-top: 5px;
-            line-height: 70px;
-            margin: 0 30px;
-
-            a {
-                color: $blanco;
-                font-size: $texto-1;
-                text-transform: uppercase;
-                font-family: $poppins;
-                font-weight: $regular;
-            }
-
-            a:hover {
-                transition: 0.5s;
-                color: $celeste-1;
-                text-decoration: none;
-            }
-        }
-    }
-
-    .selected-no {
-        height: 5px;
-    }
-
-    .selected-yes {
-        height: 5px;
-        background-color: $celeste-1 ;
-        border-radius: 3px 3px 0px 0px;
-    }
-
-    @media screen and (max-width: $laptop) {
-        display: none;
-    }
-
+.nav-link{
+	font-family: $poppins;
+	font-size: 20px;
+	margin: 10px 30px;
 }
-
-.enlace {
-  	position: inherit;
-  	height: 50px;
-  	width: auto;
-  	margin: 15px 50px;
-
-  	@media screen and (max-width: $laptop) {
-    	position: relative;
-    	margin: 20px 50px 20px 4%;
-    	height: 45px;
-  	}
-}
-
-.enlace img {
-  	height: 50px;
-
-  	@media screen and (max-width: $laptop) {
-    	height: 45px;
-	}
-}
-
-// NAVBAR MOBILE
-
-
 
 //TEXT-BOX
 
