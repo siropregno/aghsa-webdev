@@ -15,11 +15,33 @@ body {
 }
 
 // NAVBAR
+.navbar-brand img{
+	height: 50px;
+	@media screen and (max-width: $laptop)  {
+		margin-left: -40px;
+		height: 45px;
+	}
+}
+
+.fa-bars{
+	font-size: 35px;
+	color: $blanco;
+}
 
 .nav-link{
 	font-family: $poppins;
 	font-size: 20px;
 	margin: 10px 30px;
+}
+
+.offcanvas-body{
+	hr{
+		height: 1px; 
+		margin: 0 0 0 30px; 
+		
+		border-radius: 50px; 
+		border-width: 0px;
+	}
 }
 
 //TEXT-BOX
@@ -55,6 +77,56 @@ body {
 			margin-left: 0%;
 		}
 	}
+}
+
+//SLIDER
+
+#carouselExampleAutoplaying {
+    @media screen and (max-width: $medium) {
+    }
+}
+
+.carousel-caption{
+    max-width: 500px; 
+    display: flex; 
+    justify-content: center; 
+    align-content: flex-start; 
+    flex-direction: column;
+    height: 550px;
+    @media screen and (max-width: $medium) {
+        height: 350px;
+    }
+}
+
+.img-big {
+    filter: brightness(40%);
+
+    @media screen and (max-width: $medium) {
+        display: none;
+    }
+
+}
+
+.img-medium {
+    filter: brightness(40%);
+
+    @media screen and (min-width: $medium) {
+        display: none;
+    }
+
+}
+
+.slide-title {
+    text-align: left; 
+    font-size: $titulo-1;
+    font-weight: $black;
+    text-transform: uppercase;
+}
+
+.slide-text{
+    text-align: left; 
+    font-size: $texto-1;
+    font-weight: $light;
 }
 
 .text-box2 {

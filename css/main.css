@@ -11,10 +11,32 @@ body {
   overflow-x: hidden;
 }
 
+.navbar-brand img {
+  height: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .navbar-brand img {
+    margin-left: -40px;
+    height: 45px;
+  }
+}
+
+.fa-bars {
+  font-size: 35px;
+  color: #f2f2f2;
+}
+
 .nav-link {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   margin: 10px 30px;
+}
+
+.offcanvas-body hr {
+  height: 1px;
+  margin: 0 0 0 30px;
+  border-radius: 50px;
+  border-width: 0px;
 }
 
 .text-box {
@@ -49,6 +71,51 @@ body {
     width: 100%;
     margin-left: 0%;
   }
+}
+
+.carousel-caption {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: column;
+  height: 550px;
+}
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    height: 350px;
+  }
+}
+
+.img-big {
+  filter: brightness(40%);
+}
+@media screen and (max-width: 768px) {
+  .img-big {
+    display: none;
+  }
+}
+
+.img-medium {
+  filter: brightness(40%);
+}
+@media screen and (min-width: 768px) {
+  .img-medium {
+    display: none;
+  }
+}
+
+.slide-title {
+  text-align: left;
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.slide-text {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .text-box2 {
