@@ -41,30 +41,34 @@ body {
 			flex-direction: column;
 			justify-content: space-between;
 			height: 80px;
-			margin: 0 12px;
-				
-				@media screen and (min-width: $laptop)  {
-					font-size: 1.25rem;
-					margin: 0 2%;
-				}
-			a{
+			margin: 0 2%;
+			@media screen and (max-width: $laptop)  {
+				justify-content: center;
+				font-size: 1.25rem;
+				margin: 0 12px;
+				height: 60px;
+			}
+			a{	
+				color: $blanco;
+				padding: 14px 0px 2px 0px;
 				text-decoration: none;
 				font-family: $poppins;
 				font-size: 20px;
+				font-weight: $medium;
 				line-height: 55px;
 				@media screen and (max-width: $laptop) {
 					padding: 0;
 				}
 			}
-			hr{
-				height: 1px; 
-				margin: 0; 
-				background-color: $celeste-1; 
-				border-radius: 50px; 
-				border-width: 0px;
-				@media screen and (min-width: $laptop)  {
-					display: none;
-				}
+		}
+		hr{
+			height: 1px; 
+			margin: 0 12px; 
+			background-color: $celeste-1; 
+			border-radius: 50px; 
+			border-width: 0px;
+			@media screen and (min-width: $laptop)  {
+				display: none;
 			}
 		}
 	}
