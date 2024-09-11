@@ -37,20 +37,28 @@ body {
 		justify-content: end;
 		flex-grow: 1;
 		li{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 80px;
+			margin: 0 12px;
+				
+				@media screen and (min-width: $laptop)  {
+					font-size: 1.25rem;
+					margin: 0 2%;
+				}
 			a{
 				text-decoration: none;
 				font-family: $poppins;
 				font-size: 20px;
-				margin: 10px 12px;
-				
-				@media screen and (min-width: $laptop)  {
-					font-size: 1.25rem;
-					margin: 10px 20px;
+				line-height: 55px;
+				@media screen and (max-width: $laptop) {
+					padding: 0;
 				}
 			}
 			hr{
 				height: 1px; 
-				margin: 0 10px 0 12px; 
+				margin: 0; 
 				background-color: $celeste-1; 
 				border-radius: 50px; 
 				border-width: 0px;
@@ -59,6 +67,23 @@ body {
 				}
 			}
 		}
+	}
+}
+
+.item-selected {
+	width: auto;
+	height: 5px;
+	background-color: $celeste-1 ;
+	border-radius: 3px 3px 0px 0px;
+	@media screen and (max-width: $laptop) {
+		display: none;
+	}
+}
+
+.item-noselected {
+	height: 5px;
+	@media screen and (max-width: $laptop) {
+		display: none;
 	}
 }
 

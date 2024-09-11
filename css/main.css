@@ -29,27 +29,60 @@ body {
   justify-content: end;
   flex-grow: 1;
 }
+.offcanvas-body ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  margin: 0 12px;
+}
+@media screen and (min-width: 991px) {
+  .offcanvas-body ul li {
+    font-size: 1.25rem;
+    margin: 0 2%;
+  }
+}
 .offcanvas-body ul li a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  margin: 10px 12px;
+  line-height: 55px;
 }
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 991px) {
   .offcanvas-body ul li a {
-    font-size: 1.25rem;
-    margin: 10px 20px;
+    padding: 0;
   }
 }
 .offcanvas-body ul li hr {
   height: 1px;
-  margin: 0 10px 0 12px;
+  margin: 0;
   background-color: #01A2D8;
   border-radius: 50px;
   border-width: 0px;
 }
 @media screen and (min-width: 991px) {
   .offcanvas-body ul li hr {
+    display: none;
+  }
+}
+
+.item-selected {
+  width: auto;
+  height: 5px;
+  background-color: #01A2D8;
+  border-radius: 3px 3px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .item-selected {
+    display: none;
+  }
+}
+
+.item-noselected {
+  height: 5px;
+}
+@media screen and (max-width: 991px) {
+  .item-noselected {
     display: none;
   }
 }
