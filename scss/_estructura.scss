@@ -46,10 +46,10 @@ body {
 				justify-content: center;
 				font-size: 1.25rem;
 				margin: 0 12px;
-				height: 60px;
+				height: 65px;
 			}
 			a{	
-				color: $blanco;
+				color: rgba(255,255,255,0.55);
 				padding: 14px 0px 2px 0px;
 				text-decoration: none;
 				font-family: $poppins;
@@ -59,6 +59,14 @@ body {
 				@media screen and (max-width: $laptop) {
 					padding: 0;
 				}
+				
+			}
+			a:hover {
+				color: rgba(255,255,255,0.75);
+				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+			}
+			.text-selected{
+				color: $blanco;
 			}
 		}
 		hr{
