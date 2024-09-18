@@ -36,6 +36,13 @@ body {
 	--bs-offcanvas-transition: transform 0.4s ease-in-out !important;
 }
 
+.container-fluid {
+	padding: 0 29px !important;
+	@media screen and (max-width: $laptop) {
+		padding: 0 20px !important;
+	} 
+}
+
 .offcanvas-body{
 	ul{
 		justify-content: end;
@@ -124,7 +131,7 @@ body {
 	}
 
 	p {
-		margin-top: 15px;
+		margin-top: 20px;
 		font-weight: $regular;
 		line-height: 25px;
 		font-size: $texto-1;
@@ -181,12 +188,37 @@ body {
     font-size: $titulo-1;
     font-weight: $black;
     text-transform: uppercase;
+	@media screen and (max-width: $medium) {
+        font-size: 30px;
+	}
 }
 
 .slide-text{
     text-align: left; 
     font-size: $texto-1;
     font-weight: $light;
+	@media screen and (max-width: $medium) {
+        font-size: $semitexto-1;
+	}
+}
+
+.button-slide {
+	text-align: left;
+	margin-top: 15px;
+	a {
+		font-family: $poppins;
+		font-weight: $semibold;
+		font-size: $semitexto-1;
+		text-decoration: none;
+		color: $blanco;
+		border-radius: 50px;
+		background-color: $celeste-1;
+		padding: 10px 15px;
+		text-decoration: none !important;
+	}
+	a:hover {
+		filter: brightness(110%);
+	}
 }
 
 .text-box2 {
@@ -206,6 +238,20 @@ body {
 		}
 	}
 
+}
+
+.carousel-indicators {
+	button {
+		border-radius: 50px;
+		height: 15px !important;
+		width: 15px !important;
+		border-top: 0 !important;
+		border-bottom: 0 !important;
+		transition: .6s ease !important;
+	}
+	.active {
+		background-color: $verde-1 !important;
+	}
 }
 
 //IMAGE2
